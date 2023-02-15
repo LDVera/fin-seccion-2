@@ -10,7 +10,7 @@ export default function AboutPage() {
         <h1>About Page</h1>
         
         <h1 className={'title'}>
-          Ir a <Link href="/">Home</Link>
+          Ir a <Link legacyBehavior href="/">Home</Link>
         </h1>
 
         <p className={'description'}>
@@ -22,7 +22,7 @@ export default function AboutPage() {
 }
 
 
-AboutPage.getLayout = function getLayout( page ) {
+AboutPage.getLayout = function getLayout( page: JSX.Element ) {
   return (
     <MainLayout>
       <DarkLayout>
